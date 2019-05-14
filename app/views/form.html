@@ -1,0 +1,49 @@
+<section id="cadastro">
+    <section id="form">
+        <h1>Formulário</h1>
+        <hr>
+        <form action="#">
+            <label for="ID">ID:(*)</label><br/>
+            <input type="number" name="id" id="id"><br/>
+
+            <label for="NOME">Nome:(*)</label><br/>
+            <input type="text" name="nome" id="nome"><br/>
+
+            <label for="EMAIL">E-mail:</label><br/>
+            <input type="email" name="email" id="email"><br/>
+
+            <label for="CURSOS">Curso:(*)</label><br/>
+            <select name="cursos" id="cursos">
+                <option value="">...</option>
+                <option value="BCC">BCC</option>
+                <option value="BSI">BSI</option>
+                <option value="TSI">TSI</option>
+            </select>
+            <br/>
+            <label for="MENSAGEM">Mensagem:</label><br/>
+            <textarea name="mensagem" id="msg" cols="30" rows="10">
+
+            </textarea><br/><br/>
+            <button type="button" class="sucesso" onclick="validar()">Cadastrar</button>
+            <button type="button" class="sucesso" onclick="window.location.href = 'index.html'"">Cancelar</button>
+        </form>
+    </section>
+    <section id="tabela">
+        <h1>Tabela</h1>
+        <hr>
+        <table>
+            <caption>Pessoas a adicionar</caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>DELETAR</th>
+                    <th>ALTERAÇÃO</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </section>
+</section>
