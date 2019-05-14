@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hide em js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../app/public/lib/jquery-3.4.1.js"></script>
+    <script src="../app/public/lib/jquery-3.4.1.min.js"></script>
+    <style>
+        .estilo-div{
+            margin: 0 auto;
+            border: 1px solid black;
+            text-align: center;
+            display: table;
+        }
+
+        div#pai{
+            width: 50%;
+            height: 5em;
+            background-color: gray;
+        }
+
+        div#filha{
+            width: 50%;
+            height: 5em;
+            background-color: hotpink;
+        }
+
+        div p{
+            font-size: 2em;
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="pai" class="estilo-div">
+        <div id="filha" class="estilo-div" onclick="someDiv()">
+
+        </div>
+        <p onclick="someTexto()"></p>
+    </div>
+</body>
+    <script>
+        function someDiv(){
+            $("#filha").css("visibility", "hidden");
+            $("p")[0].innerHTML = "NÃO CLIQUE"
+        }
+
+        function someTexto(){
+            $("#filha").css("visibility", "visible")
+            $("p")[0].innerHTML = "";
+        }
+    </script>
+</html>
