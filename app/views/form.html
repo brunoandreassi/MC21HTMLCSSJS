@@ -5,8 +5,13 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Form</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='../public/css/estilo.css'>
-        <!-- <script src='main.js'></script> -->
+        <link rel='stylesheet' type='text/css' media='screen' href='../public/css/estilo.css'>       
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+        <script src="../public/js/scriptform.js"></script>
     </head>
     <body>
         <header><h1>LOGO</h1></header>
@@ -28,7 +33,7 @@
                         <hr>
                         <form action="#">
                             <label for="ID">ID:(*)</label><br/>
-                            <input type="number" name="id" id="id"><br/>
+                            <input type="number" name="id" id="id" value="0"><br/>
                 
                             <label for="NOME">Nome:(*)</label><br/>
                             <input type="text" name="nome" id="nome"><br/>
@@ -49,7 +54,7 @@
                 
                             </textarea><br/><br/>
                             <button type="button" class="sucesso" onclick="validar()">Cadastrar</button>
-                            <button type="button" class="sucesso" onclick="window.location.href = 'index.html'"">Cancelar</button>
+                            <button type="button" class="cancela" onclick="window.location.href = 'index.html'">Cancelar</button>
                         </form>
                     </section>
                     <section id="tabela">

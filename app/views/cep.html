@@ -3,10 +3,16 @@
     <head>
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Principal</title>
+        <title>Busca CEP</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' media='screen' href='../public/css/estilo.css'>
-        <!-- <script src='main.js'></script> -->
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+        <script src="../public/js/scriptcep.js"></script>
     </head>
     <body>
         <header><h1>LOGO</h1></header>
@@ -28,7 +34,7 @@
                     <br>
                     <form action="#">
                         <label for="CEP">CEP:(*)</label><br>
-                        <input type="number" name="cep" id="cep"><br>
+                        <input type="text"  id="cep" autofocus><br>
 
                         <label for="UF">UF:</label><br>
                         <input type="text" name="uf" id="uf" readonly><br>
