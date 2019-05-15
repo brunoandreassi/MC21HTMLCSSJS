@@ -163,3 +163,101 @@ form input#msg {
     background-color: #ee9e9e;
     color: red;
 }
+
+/* BUTTONS */
+form button {
+    width: 30%;
+    height: 3em;
+    font-size: 1em;
+    line-height: 2em;
+    margin: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    
+}
+
+.sucesso {
+    border: 2px solid #3ca84b; 
+}
+
+.cancela {
+    border: 2px solid #d43140; 
+}
+
+.sucesso:hover {
+    transition: all;
+    transition-delay: 90ms;
+    transition-duration: 500ms;
+    transform: scale(1.1, 1.1);
+    background-color: #3ca84b;
+    font-weight: bold;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    color: #ffffff;
+    box-shadow: 1px 1px 2px 2px #000000;
+    cursor: pointer;
+}
+
+.cancela:hover {
+    transition: all;
+    transition-delay: 90ms;
+    transition-duration: 500ms;
+    transform: scale(1.1, 1.1);
+    background-color: #d43140;
+    font-weight: bold;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    color: #ffffff;
+    box-shadow: 1px 1px 2px 2px #000000;
+    cursor: pointer;
+}
+/* ERROR */
+.erro {
+    border: 3px solid #d43140;
+    border-radius: 5px;
+}
+
+/* TABLE */
+table {
+    margin: 0 auto;
+}
+
+caption {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+table, th, td {
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead {    
+    background-color: rgba(45, 52, 54, 0.05);
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(45, 52, 54, 0.25);
+}
+
+tbody tr:hover {
+    background-color: #d43140;
+}
+
+table tbody tr td a:hover{
+    transform: scale(1.2, 1.2);
+    font-weight: bold;
+}
+
+table tbody tr td input {
+    width: 50%;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
